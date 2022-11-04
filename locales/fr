@@ -1,0 +1,61 @@
+
+export default {
+  'title': 'Kit de dégonflage de SUV',
+  // Index
+  'sup-title': 'Imprime & distribue ton kit de dégonflage de SUV',
+  'top-pre-list': `Dégonfler un SUV ? C'est à la porté de tout le monde, il suffit :`,
+  'top-list-1': `d'ouvrir la valve d'un des pneus`,
+  'top-list-2': `d'y glisser un grain de poivre`,
+  'top-list-3': `de refermer la valve par dessus`,
+  'top-post-list': `Le pneu commence alors à se dégonfler tranquillement...`,
+  'top-hilghlight' : `
+    <p>
+      Alors,<br/>
+      pour montrer au plus grand nombre à quel point c'est facile,<br/>
+      nous vous proposons de créer vos kits pédagogiques <br/>
+      <span class="highlight">à distribuer sans modération !</span>
+    </p>
+  `,
+  'wheel-title' : `Dégonfle un SUV !`,
+  // Kit step
+  'kit-step-1-header' : `✊ · Choisit ton slogan`,
+  'kit-step-1-content' : `Choisit ta phrase d'accroche parmis les propositions, ou bien créer la tienne :`,
+  'kit-step-2-header' : `🖨 · Imprime ton kit`,
+  'kit-step-2-content' : `Cliques ici pour lancer l'impression de ton kit :`,
+  'kit-step-3-header' : `💌 · Plie tes enveloppes`,
+  'kit-step-3-content' : `
+    Une fois découpé, plie ton enveloppe en suivant les pointillés.<br/>
+    Fait en sorte qu'une fois refermé, seules les parties vertes soient visibles au dos, de manière à cacher
+    les instructions à l'intérieur.
+    <br/><br/>
+    Ça sera peut-être plus simple avec <a href="https://youtu.be/vK7jIkas2jk?t=53">cette vidéo</a>.
+  `,
+  'kit-step-4-header' : `🎊 · Ajoutes-y des petits grains de poivre`,
+  'kit-step-4-content' : `
+    N'oublie pas d'ajouter des grains de poivre à ton kit pour que la personne qui
+    l'utilisera ait tout ce dont elle a besion.
+  `,
+  'kit-step-5-header' : `🗞️ · Distribue-les autour de toi !`,
+  'kit-step-5-content' : `
+    Distribue tes kits où bon te semble, laisses-en trainer au bureau, dans les toilettes
+    de ton bar favori, sur des sièges dans le bus, scotché sur des poteaux dans ta ville...
+  `,
+  'slogan-0' : `C'est facile : ouvre la valve & mets-y ton grain d'poivre !`,
+  'slogan-1' : `Sauve la planète & aide un citadin à mieux respirer`,
+  'slogan-2' : `Sauve un piéton, en immobilisant un tank`,
+  'print-button' : 'Imprimer le kit',
+  'preview-label': 'Aperçu du kit',
+  'kit-label': 'Étapes de création du kit',
+  'kit-intro-1': 'Dégonfler un SUV ? ',
+  'kit-intro-2': 'C\'est facile,',
+  'kit-intro-3': 'suivez le guide !',
+  'kit-step-list-1-1': `1- ouvre la valve d'un`,
+  'kit-step-list-1-2': `des pneus`,
+  'kit-step-list-2-1': `2- glisses-y un grain`,
+  'kit-step-list-2-2': `de poivre`,
+  'kit-step-list-3-1': `3- referme la valve par`,
+  'kit-step-list-3-2': `dessus`,
+  'kit-print-instruction-1': `Tu veux fabriquer des kits ?`,
+  'kit-print-instruction-2': `C'est par ici :`,
+  'kit-print-instruction-3': `https://kit-suv.netlify.com/fr`,
+}

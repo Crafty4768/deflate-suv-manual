@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Arvo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Quicksand-Regular.ttf') format('truetype');
+}
+
+$font-title: 'Arvo';
+$font-text: 'Quicksand';
+
+$primary: #6044f0;
+$secondary: #cbfef4;
+
+$primary: #49416c;
+$secondary: #8ae1b5;
