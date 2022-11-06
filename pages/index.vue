@@ -1,46 +1,46 @@
 <template>
-  <div id="app">
+  <div id="app" class="m-1">
     <div>
-      <h1>{{$t('sup-title') }}</h1>
+      <h1 class="p-2 -m-1 mb-2 text-center">{{$t('sup-title') }}</h1>
     </div>
-    <div class="top">
+    <div class="mb-4 flex justify-center items-center flex-wrap">
       <WheelLogoVue />
-      <div class="top-list">
-        <div class="top-list">
-          <p>{{ $t('top-pre-list') }}</p>
-          <ol class="inline-list">
+      <div class="my-0 mx-2 flex flex-col items-center">
+        <div class="mb-2">
+          <p class="text-center mb-3">{{ $t('top-pre-list') }}</p>
+          <ol class="inline-list mb-3">
             <li>{{ $t('top-list-1') }}</li>
             <li>{{ $t('top-list-2') }}</li>
             <li>{{ $t('top-list-3') }}</li>
           </ol>
-          <p>{{ $t('top-post-list') }}</p>
+          <p class="text-center">{{ $t('top-post-list') }}</p>
         </div>
         <div class="highlight-box" v-html="$t('top-hilghlight')"></div>
       </div>
     </div>
-    <div class="body">
-      <div>
-        <h2 class="highlight">{{ $t('kit-label') }}</h2>
+    <div class="flex flex-wrap justify-center items-start">
+      <div class="flex flex-col items-center mt-0 mb-2 mx-2 w-100 sm:w-1/2 lg:w-2/5">
+        <h2 class="highlight mb-2">{{ $t('kit-label') }}</h2>
         <KitStepListVue/>
       </div>
-      <div>
-        <h2 class="highlight">{{ $t('preview-label') }}</h2>
-        <div class="highlight-box">
-          <KitToPrintVue idItem="1" />
-          <KitToPrintVue idItem="2" />
+      <div class="flex flex-col items-center mt-0 mb-2 mx-2 w-100 sm:w-1/2 lg:w-2/5">
+        <h2 class="highlight mb-2">{{ $t('preview-label') }}</h2>
+        <div class="highlight-box flex flex-wrap">
+          <KitToPrintVue idItem="1" class="w-1/2"/>
+          <KitToPrintVue idItem="2" class="w-1/2" />
+          <KitToPrintVue idItem="3" class="w-1/2" />
+          <KitToPrintVue idItem="4" class="w-1/2" />
+          <KitToPrintVue idItem="5" class="w-1/2" />
+          <KitToPrintVue idItem="6" class="w-1/2" />
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer fixed bottom-0 right-2 p-2">
       <nuxt-link
         v-for="locale in availableLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)">{{ locale.name }}
       </nuxt-link>
-    </div>
-    <div class="to-print">
-      <KitToPrintVue idItem="3" />
-      <KitToPrintVue idItem="4" />
     </div>
   </div>
 </template>
@@ -50,11 +50,6 @@
   import WheelLogoVue from '../components/WheelLogo.vue';
   import KitStepListVue from '../components/KitStepList.vue';
   import KitToPrintVue from '../components/KitToPrint.vue';
-  import { reactive } from 'vue';
-
-  export const store = reactive({
-    slogan: ''
-  })
 
   export default {
     components: {
@@ -62,29 +57,24 @@
       KitToPrintVue,
       WheelLogoVue,
     },
-    data() {
-      return {
-        store: store,
-      }
-    },
     computed: {
       availableLocales () {
         return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
       }
-    },
-    mounted() {
-      store.slogan = this.$t('slogan-0')
     },
     head() {
       const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
       return {
         title: this.$t('title'),
         meta: [
+          { charset: 'utf-8' },
           {
             hid: 'description',
             name: 'description',
-            content: this.$t('sup-title')
+            content: this.$t('sup-title'),
           },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+          { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta
         ],
         link: [
@@ -99,47 +89,7 @@
 <style lang="scss">
 @import "../assets/css/variables";
 
-h1 {
-  text-align: center;
-}
-.top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-  .top-list {
-    margin: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  p {
-    margin: 0;
-    margin-bottom: 4px;
-  }
-}
-.body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  > div {
-    margin: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &> svg {
-    margin-bottom: 2rem;
-  }
-}
 .footer {
-  position: fixed;
-  bottom: 0;
-  right: 1rem;
-  padding: 0.5rem;
-
   background: $secondary;
   a {
     color: $primary;

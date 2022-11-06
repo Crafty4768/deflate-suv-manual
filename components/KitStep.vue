@@ -1,8 +1,8 @@
 <template>
 <div class="accordion-item">
   <input type="radio" :id="idItem" :checked="active" name="menu">
-  <label :for="idItem">{{ header }}</label>
-  <div class="content">
+  <label :for="idItem" class="p-4">{{ header }}</label>
+  <div class="content p-4">
     <slot></slot>
   </div>
 </div>
@@ -33,17 +33,13 @@
 
 .accordion-item {
   border: solid 2px $primary;
-  > label, > .content{
-      padding: 14px 20px;
-  }
   > label {
       display: block;
       color: $secondary;
       font-family: $font-title;
       font-weight: bold;
-      cursor: pointer;
-      position: relative;
       transition: background-color 0.1s;
+      cursor: pointer;
       &:hover {
         background-color: rgba(0, 0, 0, 0.1);
       }

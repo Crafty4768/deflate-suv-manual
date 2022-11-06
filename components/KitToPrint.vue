@@ -102,8 +102,8 @@
       :id="'circle-path-' + idItem"
       cx="50"
       cy="50"
-      rx="15"
-      ry="15"
+      rx="16"
+      ry="16"
       transform="rotate(60 50 50)"
    />
    <ellipse
@@ -111,38 +111,38 @@
       :id="'circle-path-catchword-' + idItem"
       cx="-50"
       cy="50"
-      rx="17"
-      ry="17"
+      rx="19.5"
+      ry="19.5"
       transform="rotate(60 50 50)scale(-1,1)"
    />
 
-   <text id="wheel-title" x="40">
+   <text id="wheel-title" x="43">
       <textPath :xlink:href="'#circle-path-' + idItem">
          {{ $t('wheel-title') }}
       </textPath>
    </text>
-   <text id="wheel-catchword" x="10">
+   <text id="wheel-catchword" :x="$t('kit-start-catchword')">
       <textPath :xlink:href="'#circle-path-catchword-' + idItem">
-         {{ store.slogan }}
+         {{ $t('wheel-catchword') }}
       </textPath>
    </text>
    <text y="5" class="kit-intro">
-      <tspan x="5" dy="3">{{ $t('kit-intro-1') }}</tspan>
-      <tspan x="5" dy="5">{{ $t('kit-intro-2') }}</tspan>
-      <tspan x="5" dy="3">{{ $t('kit-intro-3') }}</tspan>
+      <tspan x="2.5" dy="2">{{ $t('kit-intro-1') }}</tspan>
+      <tspan x="2.5" dy="6">{{ $t('kit-intro-2') }}</tspan>
+      <tspan x="2.5" dy="4">{{ $t('kit-intro-3') }}</tspan>
    </text>
    <text y="5" class="kit-list">
-      <tspan x="75" dy="3">{{ $t('kit-step-list-1-1') }}</tspan>
-      <tspan x="75" dx="2" dy="3">{{ $t('kit-step-list-1-2') }}</tspan>
-      <tspan x="75" dy="4">{{ $t('kit-step-list-2-1') }}</tspan>
-      <tspan x="75" dx="2" dy="3">{{ $t('kit-step-list-2-2') }}</tspan>
-      <tspan x="75" dy="4">{{ $t('kit-step-list-3-1') }}</tspan>
-      <tspan x="75" dx="2" dy="3">{{ $t('kit-step-list-3-2') }}</tspan>
+      <tspan x="73" dy="2">{{ $t('kit-step-list-1-1') }}</tspan>
+      <tspan x="73" dx="3.1" dy="3.5">{{ $t('kit-step-list-1-2') }}</tspan>
+      <tspan x="73" dy="5">{{ $t('kit-step-list-2-1') }}</tspan>
+      <tspan x="73" dx="3.1" dy="3.5">{{ $t('kit-step-list-2-2') }}</tspan>
+      <tspan x="73" dy="5">{{ $t('kit-step-list-3-1') }}</tspan>
+      <tspan x="73" dx="3.1" dy="3.5">{{ $t('kit-step-list-3-2') }}</tspan>
    </text>
    <text y="88" class="kit-print-instruction">
-      <tspan x="68" dy="3">{{ $t('kit-print-instruction-1') }}</tspan>
-      <tspan x="68" dy="4">{{ $t('kit-print-instruction-2') }}</tspan>
-      <tspan x="68" dy="2">{{ $nuxt._i18n.__baseUrl  }}</tspan>
+      <tspan x="65" dy="3">{{ $t('kit-print-instruction-1') }}</tspan>
+      <tspan x="65" dy="4">{{ $t('kit-print-instruction-2') }}</tspan>
+      <tspan x="65" dy="3">{{ $nuxt._i18n.__baseUrl  }}</tspan>
    </text>
 </svg>
 </template>
@@ -168,29 +168,28 @@ export default {
 <style lang="scss" scoped>
    @import "../assets/css/variables";
    .kit-to-print {
-      max-width: 400px;
       text {
          font-family: $font-text;
-         font-size: 0.14rem;
+         font-size: 0.18rem;
          fill: $primary;
 
          &#wheel-title {
-         font-family: $font-title;
-            font-size: 0.3rem;
+            font-family: $font-title;
+            font-size: 0.35rem;
             text-shadow: 1px 1px $secondary;
             text-transform: uppercase;
             letter-spacing: -0.4px;
          }
          &#wheel-catchword {
          font-family: $font-title;
-            font-size: 0.13rem;
+            font-size: 0.135rem;
             text-shadow: 0.5px .5px $secondary;
          }
          &.kit-intro {
-            font-size: 0.17rem;
+            font-size: 0.22rem;
          }
          &.kit-print-instruction {
-         font-size: 0.12rem;
+         font-size: 0.16rem;
          }
       }
       .fill-primary {

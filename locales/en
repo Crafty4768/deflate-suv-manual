@@ -18,36 +18,28 @@ export default {
     </p>
   `,
   'wheel-title' : `Deflate · a · SUV !`,
+  'wheel-catchword' : `It's easy - open the valve & put peppercorn in it !`,
   // Kit step
-  'kit-step-1-header' : `✊ · Choose a slogan`,
-  'kit-step-1-content' : `Choose catchwords below, or create yours!`,
-  'kit-step-2-header' : `🖨 · Print your kit`,
-  'kit-step-2-content' : `Click bellow to print your kit`,
-  'kit-step-3-header' : `💌 · Fold your envelopes`,
-  'kit-step-3-content' : `
-    Une fois découpé, plie ton enveloppe en suivant les pointillés.<br/>
-    Fait en sorte qu'une fois refermé, seules les parties vertes soient visibles au dos, de manière à cacher
-    les instructions à l'intérieur.
-    <br/><br/>
-    Ça sera peut-être plus simple avec <a href="https://youtu.be/vK7jIkas2jk?t=53">cette vidéo</a>
-  `,
-  'kit-step-3-content' : `
+  'kit-step-1-header' : `🖨️ · Print your kit`,
+  'kit-step-1-content' : `Click bellow to get your kit`,
+  'print-button' : `Download the kit`,
+  'kit-step-2-header' : `💌 · Fold your envelopes`,
+  'kit-step-2-content' : `
     Start by cutting your enveloppe, once it is done, fold it following dotted lines.<br/>
     Make sure to hide instructions inside. At the end, on the back, only green parts should be visible.
     <br/><br/>
     It may be easier watching <a href="https://youtu.be/vK7jIkas2jk?t=53">this video</a>.
   `,
-  'kit-step-4-header' : `🎊 · Add it some peppercorns`,
-  'kit-step-4-content' : `If you want your kit ready to be used: don't forget to add peppercorns in it.`,
-  'kit-step-5-header' : `🗞️ · Distribute it all around !`,
-  'kit-step-5-content' : `
+  'kit-step-3-header' : `🎊 · Add it some peppercorns`,
+  'kit-step-3-content' : `If you want your kit ready to be used: don't forget to add peppercorns in it.`,
+  'kit-step-4-header' : `🗞️ · Distribute it all around !`,
+  'kit-step-4-content' : `
     Distribute your kits wherever you want, leave some at the office, in your favorite pub,
     on seats in the bus, attach it to street lamp in your city...
   `,
   'slogan-0' : `It's easy - open the valve & put peppercorn in it !`,
   'slogan-1' : `Save earth & help a citizen to breath better`,
   'slogan-2' : `Save a  walker, paralyze a tank !`,
-  'print-button' : 'Print my kit',
   'kit-label': 'Steps to made your kit',
   'preview-label': 'Kit preview',
   'kit-intro-1': 'Deflate a SUV ? ',
@@ -59,7 +51,8 @@ export default {
   'kit-step-list-2-2': `in it`,
   'kit-step-list-3-1': `3- close the valve`,
   'kit-step-list-3-2': ``,
-  'kit-print-instruction-1': `Want to make your kits ?`,
-  'kit-print-instruction-2': `It' this way:`,
-  'kit-print-instruction-3': `https://kit-suv.netlify.com/fr`,
+  'kit-print-instruction-1': `Want your own kits ?`,
+  'kit-print-instruction-2': `Go this way:`,
+  'kit-print-instruction-3': `https://kit-suv.netlify.com`,
+  "kit-start-catchword": '18',
 }

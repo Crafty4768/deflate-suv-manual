@@ -100,7 +100,7 @@
       </text>
       <text id="wheel-catchword" x="530">
          <textPath xlink:href="#circle-path-catchword">
-          {{ store.slogan }}
+          {{ $t('wheel-catchword') }}
          </textPath>
       </text>
     </g>

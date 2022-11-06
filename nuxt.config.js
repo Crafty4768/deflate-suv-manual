@@ -4,7 +4,11 @@ export default {
     '~/assets/css/main.scss',
   ],
   modules: [
-    'nuxt-i18n'
+    'nuxt-i18n',
+  ],
+  buildModules: [
+    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/tailwindcss',
   ],
   i18n: {
     lazy: true,
@@ -24,6 +28,6 @@ export default {
       },
     ],
     defaultLocale: 'en',
-    baseUrl: 'https://kit-suv.github.io',
+    baseUrl: 'https://kit-suv.netlify.com',
   },
 }
